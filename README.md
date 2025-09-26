@@ -30,6 +30,13 @@ Main branch will later be used for the real pipeline, and this early work will m
 
 ---
 
+## Log-Mel Spectrogram Tool
+
+Added a new utility to visualize audio as a log-mel spectrogram.  
+It supports the full signal or a chosen event segment, with adjustable FFT/hop settings, frequency limits, time zoom, and optional window overlays.  
+Also includes dB dynamic range clipping for clear visuals ..  exploring time–frequency content and comparing different classes of events.
+
+
 ## Next steps
 
 - finish dataset exploration  
