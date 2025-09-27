@@ -1,0 +1,28 @@
+dataset:
+  train_wavs: []
+  val_wavs: []
+  labels_glob: ""
+  sr: 16000
+
+features:
+  n_mels: 64
+  n_fft: 1024
+  hop_length: 256
+  fmin: 20
+  fmax: 4000
+  log_mel: true
+
+model:
+  type: crnn
+  cnn_channels: [32, 64]
+  rnn_hidden: 128
+  num_classes: 3
+
+train:
+  epochs: 30
+  batch_size: 16
+  lr: 1e-3
+
+infer:
+  threshold: 0.5
+  min_event_frames: 3
