@@ -1,0 +1,6 @@
+dige/
+logs/
+
+*.wav
+
+__pycache__/
