@@ -71,7 +71,7 @@ postprocess:
   threshold: 0.5
   min_dur_s: 0.08
   min_gap_s: 0.05
-
+```
 ## TODO (next steps)
 
 - Add the classifier stage (take BS spans → classify into {b, mb, h}).
