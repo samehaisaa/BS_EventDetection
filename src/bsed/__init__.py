@@ -1,1 +1,2 @@
-__all__ = ["io", "preprocessing", "labeling", "viz", "train", "postprocess"]
+from . import io, preprocessing, labeling, viz, postprocess
+from .models.crnn import CRNN
