@@ -2,5 +2,5 @@ dige/
 logs/
 
 *.wav
-
+*.txt
 __pycache__/
