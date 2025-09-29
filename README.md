@@ -50,6 +50,26 @@ These map probabilities → binary masks → merged events with clean onsets/off
 
 ---
 
+
+
+
+### 5) Training curve snapshot
+
+| Epoch | Train Loss | Val Loss | FW-F1   | Precision | Recall |
+|------:|------------|----------|------|-----------|--------|
+| 01    | 0.5101     | 0.4563   | 0.242 | 0.919     | 0.139 |
+| 02    | 0.4002     | 0.3581   | 0.727 | 0.783     | 0.679 |
+| 03    | 0.3776     | 0.5387   | 0.670 | 0.524     | 0.929 |
+| …     | …          | …        | …     | …         | …     |
+| 09    | 0.3071     | 0.3039   | 0.772 | 0.846     | 0.710 |
+| 10    | 0.2884     | 0.2905   | 0.810 | 0.776     | 0.847 |
+
+*FW-F1 = framewise F1 computed per frame (hop ≈ 10 ms, window ≈ 25 ms), so temporal resolution is ~10 ms ..*
+
+
+
+---
+
 ### 4) Predicted events vs Ground Truth
 
 We visualize predicted spans against GT to see timing agreement, merges/splits, and misses at a glance.
