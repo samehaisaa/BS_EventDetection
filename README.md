@@ -64,7 +64,7 @@ These map probabilities → binary masks → merged events with clean onsets/off
 | 09    | 0.3071     | 0.3039   | 0.772 | 0.846     | 0.710 |
 | 10    | 0.2884     | 0.2905   | 0.810 | 0.776     | 0.847 |
 
-*FW-F1 = framewise F1 computed per frame (hop ≈ 10 ms, window ≈ 25 ms), so temporal resolution is ~10 ms ..*
+*FW-F1 = framewise F1 computed per frame (hop ≈ 10 ms, window ≈ 25 ms), so temporal resolution is ~10 ms ..-ai*
 
 
 
@@ -92,6 +92,14 @@ postprocess:
   min_dur_s: 0.08
   min_gap_s: 0.05
 ```
+
+## t-SNE visualization
+
+![t-SNE of bowel sound classes](docs/figs/tsne_classes.png)
+
+This plot shows how the extracted features cluster when projected with t-SNE.  
+two of the 3 classes are clearly separable, confirming that our feature set carries discriminative power.
+
 ## TODO (next steps)
 
 - Add the classifier stage (take BS spans → classify into {b, mb, h}).
