@@ -1,0 +1,24 @@
+audio:
+  sr: 16000
+  seg_dur_s: 10.0
+  hp_cut_hz: 60.0
+mel:
+  n_mels: 128
+  win_ms: 25.0
+  hop_ms: 10.0
+labels:
+  wanted: ["b", "mb", "h"]
+binary:
+  overlap_threshold: 0.5
+train:
+  epochs: 20
+  batch_size: 8
+  lr: 0.001
+  weight_decay: 0.0001
+  rnn_hidden: 64
+  rnn_layers: 1
+inference:
+  thr_open: 0.5
+  thr_close: 0.5
+  gap_merge_s: 0.100
+  min_dur_s: 0.018

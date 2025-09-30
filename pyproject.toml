@@ -1,0 +1,24 @@
+[project]
+name = "bsed"
+version = "0.1.0"
+description = "Bowel Sound Event Detection CLI"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy",
+  "scipy",
+  "pandas",
+  "matplotlib",
+  "librosa",
+  "soundfile",
+  "torch",
+  "tqdm",
+  "scikit-learn",
+  "seaborn"
+]
+
+[tool.pyright]
+include = ["src"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
