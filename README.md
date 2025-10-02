@@ -106,5 +106,5 @@ Separation comes from combining temporal stats and spectral descriptors that cap
 
 ## TODO (next steps)
 
-- Add the classifier stage (take BS spans → classify into {b, mb, h}).
+![GT vs Pred Gantt](docs/figs/classes.png)
 - Document and integrate spectral feature extraction (e.g., MFCCs, spectral centroid/rolloff/entropy) for each BS event to support classification.
