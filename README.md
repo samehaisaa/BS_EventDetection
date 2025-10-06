@@ -103,8 +103,12 @@ Separation comes from combining temporal stats and spectral descriptors that cap
 
 
 
+---
 
-## TODO (next steps)
+### Sound Event Detection Evaluation (`sed_eval.py`)
 
-![GT vs Pred Gantt](docs/figs/classes.png)
-- Document and integrate spectral feature extraction (e.g., MFCCs, spectral centroid/rolloff/entropy) for each BS event to support classification.
+[`sed_eval.py`](analysis/sed_eval.py) implements the **event-based evaluation metrics** described in  
+**de Benito-Gorrón et al. (2021)** —  
+> *An Analysis of Sound Event Detection under Acoustic Degradation Using Multi-Resolution Systems*,  
+> *Applied Sciences*, 11(23), 11561.  
+> [https://doi.org/10.3390/app112311561](https://doi.org/10.3390/app112311561)
