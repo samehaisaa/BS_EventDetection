@@ -105,6 +105,15 @@ Separation comes from combining temporal stats and spectral descriptors that cap
 
 ---
 
+
+<img src="docs/figs/classes.png" alt="BS classes with timestamps" style="width:70%;"/>
+
+---
+
+
+
+
+
 ### Sound Event Detection Evaluation (`sed_eval.py`)
 
 [`sed_eval.py`](analysis/sed_eval.py) implements the **event-based evaluation metrics** described in  
